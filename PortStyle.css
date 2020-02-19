@@ -1,0 +1,1655 @@
+/* reset*/
+
+body,
+p,
+a,
+ul,
+li,
+h1 {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+input{
+  display: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+@media only screen and (min-width: 700px){
+  
+   .body {
+    display: grid;
+    user-select: none;
+  }
+
+  #navbar {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .list {
+    display: flex;
+  }
+
+  .text {
+    background-color: black;
+    color: white;
+    display: grid;
+    width: 200px;
+    place-items: center;
+    margin: 10px 2px 0px 2px;
+    padding: 3px;
+    font-size: 1.5em;
+    font-family: "mate sc";
+  }
+
+  .label1 {
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  .label2 {
+    border-radius: 0px 0px 0px 0px;
+  }
+
+  .label3 {
+    border-radius: 0px 0px 0px 0px;
+  }
+
+  .label4 {
+    border-radius: 0px 10px 10px 0px;
+  }
+
+  .drop {
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    background-color: black;
+    color: white;
+    margin: 10px 2px 0px 2px;
+    transform: skew(0deg, 0);
+    font-size: 10px;
+  }
+
+  .drop:hover{
+    background-color: #4F4F4F;
+  }
+  
+  .text:hover{
+background-color: #4F4F4F;
+  }
+  
+  
+  .button {
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid white;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+  }
+
+  .droplink {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    background-color: black;
+    color: white;
+    margin: 10px 2px 0px 2px;
+  }
+
+  .droplist {
+    position: absolute;
+    top: -100px;
+    right: 100%;
+    color: black;
+    display: none;   
+  }
+
+    @keyframes dropdowns{
+    0%{opacity: 0}
+    50%{opacity:0}
+    100%{top: 40px; opacity:1;}
+  }
+  
+  
+  #dropdown:checked + .droplist {
+    display: flex;
+    animation: dropdowns 0.3s ease forwards; 
+  }
+
+  div ul li {
+    background-color: black;
+    margin: 10px 2px 0px 2px;
+    color: white;
+    font-size: 1.4em;
+    width: 200px;
+    height: 40px;
+    font-family: "mate sc";
+    display: grid;
+    place-items: center;
+  }
+  
+  div ul li:hover{
+    background-color: #4F4F4F;
+  }
+
+  a {
+    cursor: pointer;
+  }
+  
+  #welcome-section {
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+    #welcome-section:before {
+    background-image: url(https://img.pngio.com/hindu-hand-symbol-namaste-symbol-and-meaning-in-hinduism-namaste-hand-png-500_450.png);
+    background-size: 250px 230px;
+    display: inline-block;
+    width: 250px; 
+    height: 230px;
+    content:"";
+    position: absolute;
+    top: 75px;
+    right: 0;
+  }
+      #welcome-section:after {
+    background-image: url(https://img.pngio.com/hindu-hand-symbol-namaste-symbol-and-meaning-in-hinduism-namaste-hand-png-500_450.png);
+    background-size: 250px 230px;
+    display: inline-block;
+    width: 250px; 
+    height: 230px;
+    content:"";
+    position: absolute;
+    top: 75px;
+    left: 0;
+    transform: scaleX(-1);
+  }
+  
+
+  .namaste {
+    font-family: lemonada;
+    padding-top: 100px;
+    font-size: 100px;
+    padding-bottom: 60px;
+    transition: all 1s ease;
+
+  }
+
+  .namaste:hover{
+    letter-spacing: 20px;
+  }
+ 
+
+  .hellomynameis {
+    display: flex;
+    justify-content: center;
+    grid-row: 2/3;
+  }
+
+  .box {
+    background-color: black;
+    height: 350px;
+    width: 600px;
+    border-radius: 10px;
+    margin-top: -20px;
+  }
+
+  .hello {
+    color: white;
+    text-align: center;
+    padding: 15px 0px 10px 0px;
+    font-family: "lemonada";
+    font-size: 1.5em
+  }
+
+  .name {
+    color: black;
+    background-color: white;
+    height: 55%;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    user-select: none;
+  }
+
+  .name:hover {
+    background-color: lightgray;
+    cursor: pointer;
+  }
+
+  .rishav {
+    margin: auto;
+    font-size: 4em;
+    font-family: "kaushan script";
+  }
+  
+ #about {
+    grid-row: 3/4;
+    width: 100%;
+    height: 500px;
+    background-color: lightgray;
+    margin: 100px auto 100px auto;
+    display: grid;
+    grid-template-rows: 75px 1fr;
+    position: relative;
+  }
+
+  .timeline {
+    grid-row: 1/2;
+    display: grid;
+    place-items: center;
+  }
+
+  .line {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    display: flex;
+    place-items: center;
+  }
+
+  .dots {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+  }
+
+  .dotter {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+    pointer: cursor;
+  }
+
+  .dotter:hover {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+  }
+
+  label {
+    display: block;
+  }
+
+  #navbar input {
+    display: none;
+  }
+
+  .test {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    right: 20px;
+    text-align: center;
+    font-family: "Arial";
+  }
+
+  h2 {
+    font-weight: lighter;
+    font-size: 1.3em;
+    margin-top: 30px;
+    font-family: 'mate sc';
+  }
+
+  #about input {
+    display: none;
+  }
+
+  #birth:checked ~ .test {
+    display: block;
+  }
+
+  #mid:checked ~ .test {
+    display: block;
+  }
+
+  #end:checked ~ .test {
+    display: block;
+  }
+
+  #birth:checked ~ .dotter {
+    background-color: gray;
+  }
+
+  #mid:checked ~ .dotter {
+    background-color: gray;
+  }
+
+  #end:checked ~ .dotter {
+    background-color: gray;
+  }
+  
+  .test p{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 0.9em;
+  }
+  
+  #about:after{
+      background-image: url(https://i.postimg.cc/rFLhzf2K/nepal-web.png);
+    background-size: 400px 250px;
+    display: inline-block;
+    width: 400px; 
+    height: 250px;
+    content:"";
+    position: absolute;
+    top: 250px;
+    left: -60px;
+  }
+
+  #about:before{
+      background-image: url(https://i.postimg.cc/dVky8YY6/sf-web.png);
+    background-size: 300px 200px;
+    display: inline-block;
+    width: 300px; 
+    height: 200px;
+    content:"";
+    position: absolute;
+    top: 318px;
+    right: -10px;
+  }
+  
+  .body:after{
+          background-image: url(https://i.postimg.cc/sXK6Q9fh/plane-web.png);
+    background-size: 100px 70px;
+    display: inline-block;
+    width: 100px; 
+    height: 75px;
+    content:"";
+    position: absolute;
+    top: 1234px;    
+    left: 100px;
+    transform-origin: center top;
+	  transform: rotate(0deg);
+	  animation:  fly 15s infinite ease-in-out;
+  }
+
+  @keyframes fly{
+  0%{
+    opacity: 0;
+  }
+    30%{
+      opacity: 1;
+    }
+
+    60%{
+      top: 1111px;
+      opacity:1;
+    }
+    
+    100%{
+      left: 80%;
+      opacity: 0;
+    }
+  }
+  
+  
+  #projects {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: 500px;
+    height: 500px;
+    background-color: transparent;
+    margin: 75px auto;
+    position: relative;
+    transform: rotate(45deg);
+    place-items: center;
+    
+  }
+  
+  #projects:after{
+    content: '';
+    width: 0; 
+    height: 0; 
+    border-top: 20px solid black;
+    border-bottom: 20px solid black; 
+    border-right:20px solid black; 
+    border-left: 20px solid black;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+  .projsec {
+    margin-top: 50px;
+  }
+
+  #projects li {
+    font-family: "kaushan script";
+    color: white;
+    text-align: center;
+    font-size: 1.7em;
+    transform: rotate(-45deg);
+  }
+
+  #tri {
+    width: 75%;
+    height: 75%;
+    background-color: black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    
+  }
+  
+  #tri:hover{
+    transform: rotate(720deg);
+    transition: 1s;
+  }
+  
+  #design {
+    width: 100%;
+    height: 100%;
+    background-color: lightgray;
+
+  }
+
+  #design p {
+    text-align: center;
+    padding: 30px;
+    font-family: "Arial";
+    grid-row: 1/2;
+    grid-column: 2/5;
+    place-items: center;
+  }
+  
+.navigation{
+    display: none;
+  }
+  
+    .frames {
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+
+  }
+  
+  .frames .one{
+    width: 60%;
+    height: 30%;
+    background-color: white;
+    transform: skew(5deg);
+    margin: 10px;
+  }
+  
+  .frames .one:hover, .frames .two:hover, .frames .three:hover{
+    width:200%;
+    height: 50%;
+    transition: all 0.5s ease;
+  }
+  
+  .frames .two{ 
+    width: 60%;
+    height: 30%;
+    background-color: white;
+    transform: skew(5deg);
+    margin: 10px;
+  }
+  
+  .frames .three{
+    width: 60%;
+    height: 30%;
+    background-color: white;
+    transform: skew(5deg);
+    margin: 10px;
+  }
+
+  #popup1 {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: relative;
+
+  }
+
+  #popup1 input {
+    display: none;
+  }
+
+  #popup1:target {
+    display: block;
+    position: fixed;
+    top: -500px;
+    animation: drop 0.5s ease forwards;   
+  }
+  
+  
+  @keyframes drop{
+    0%{opacity: 0}
+    100%{transform:translateY(500px); opacity:1;}
+  }
+
+  
+    #popup2 {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: relative;
+    
+  }
+
+  #popup2 input {
+    display: none;
+  }
+
+  #popup2:target {
+    display: block;
+    position: fixed;
+    top: -500px;
+    animation: drop 0.5s ease forwards;
+  }
+  
+    #popup3 {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: relative;
+  }
+
+  #popup3 input {
+    display: none;
+  }
+
+  #popup3:target {
+    display: block;
+    position: fixed;
+    top: -500px;
+    animation: drop 0.5s ease forwards;
+  }
+  
+    #popup4 {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: relative;
+  }
+
+  #popup4 input {
+    display: none;
+  }
+
+  #popup4:target {
+    display: block;
+    position: fixed;
+    top: -500px;
+    animation: drop 0.5s ease forwards;
+  }
+
+
+  .testing {
+    width: 1000px;
+    height: 1000px;
+    border-radius: 20px;
+    background-color: white;
+    display: none;
+  }
+
+  #popup1:target {
+    display: block;
+    position: fixed;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: black;
+    font-size: 0.8em;
+    border: solid 2px;
+    border-radius: 50%;
+    padding: 5px;
+  }
+
+  .space {
+    width: 100px;
+    height: 100px;
+  }
+  
+    #social-sites {
+    display: flex;
+    justify-content: center;
+  }
+
+  #social-sites img {
+    width: 150px;
+    height: 150px;
+    margin: 50px;
+  }
+
+  
+
+}
+
+@media only screen and (max-width: 1030px){
+  #welcome-section:before {
+    background-image: url(https://img.pngio.com/hindu-hand-symbol-namaste-symbol-and-meaning-in-hinduism-namaste-hand-png-500_450.png);
+    display: none;
+
+  }
+  
+  @media only screen and (max-width: 699px) {
+  .body {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+    user-select: none;
+  }
+
+  #navbar {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .list {
+    display: flex;
+  }
+
+  .text {
+    background-color: black;
+    color: white;
+    display: grid;
+    width: 110px;
+    place-items: center;
+    margin: 10px 2px 0px 2px;
+    padding: 3px;
+    font-size: 1em;
+    font-family: "mate sc";
+    transform: skew(5deg, 0);
+  }
+
+  .label1 {
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  .label2 {
+    border-radius: 0px 0px 0px 0px;
+  }
+
+  .label3 {
+    border-radius: 0px 0px 0px 0px;
+  }
+
+  .label4 {
+    border-radius: 0px 10px 10px 0px;
+  }
+
+  .drop {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    background-color: black;
+    color: white;
+    margin: 10px 2px 0px 2px;
+    transform: skew(5deg, 0);
+    font-size: 10px;
+  }
+
+  .button {
+    width: 0px;
+    height: 0px;
+    border-top: 6px solid white;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    position: absolute;
+    top: 13px;
+    left: 9px;
+  }
+
+  .droplink {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    background-color: black;
+    color: white;
+    margin: 10px 2px 0px 2px;
+  }
+
+  .droplist {
+    position: absolute;
+    top: -100px;
+    right: 0;
+    color: black;
+    margin-right: 12px;
+    display: none;      
+  }
+
+    @keyframes dropdowns{
+    0%{opacity: 0}
+    50%{opacity:0}
+    100%{top: 30px; opacity:1;}
+  }
+  
+  
+  #dropdown:checked + .droplist {
+    display: flex;
+    animation: dropdowns 0.3s ease forwards; 
+  }
+
+  div ul li {
+    background-color: black;
+    margin: 5px 2px 2px 2px;
+    color: white;
+    font-size: 1em;
+    width: 118px;
+    height: 28px;
+    font-family: "mate sc";
+    display: grid;
+    place-items: center;
+  }
+
+  a {
+    cursor: pointer;
+  }
+
+  #welcome-section {
+    text-align: center;
+    font-size: 1.5em;
+    grid-row: 1/2;
+  }
+
+  .namaste {
+    font-family: lemonada;
+    padding-top: 70px;
+    font-size: 70px;
+    padding-bottom: 60px;
+  }
+
+  .hellomynameis {
+    display: flex;
+    justify-content: center;
+    grid-row: 2/3;
+  }
+
+  .box {
+    background-color: black;
+    height: 200px;
+    width: 350px;
+    border-radius: 10px;
+    margin-top: -20px;
+  }
+
+  .hello {
+    color: white;
+    text-align: center;
+    padding: 10px 0px 15px 0px;
+    font-family: "lemonada";
+  }
+
+  .name {
+    color: black;
+    background-color: white;
+    height: 50%;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    user-select: none;
+  }
+
+  .name:hover {
+    background-color: lightgray;
+    cursor: pointer;
+  }
+
+  .rishav {
+    margin: auto;
+    font-size: 2em;
+    font-family: "kaushan script";
+  }
+
+  #about {
+    grid-row: 3/4;
+    width: 90%;
+    height: 500px;
+    background-color: lightgray;
+    margin: 50px auto 100px auto;
+    display: grid;
+    grid-template-rows: 75px 1fr;
+    border-radius: 20px;
+    position: relative;
+  }
+
+  .timeline {
+    grid-row: 1/2;
+    display: grid;
+    place-items: center;
+  }
+
+  .line {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    display: flex;
+    place-items: center;
+  }
+
+  .dots {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+  }
+
+  .dotter {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+  }
+
+  .dotter:hover {
+    background-color: white;
+    width: 17px;
+    height: 17px;
+  }
+
+  label {
+    display: block;
+  }
+
+  #navbar input {
+    display: none;
+  }
+
+  .test {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    right: 20px;
+    text-align: center;
+    font-family: "Arial";
+  }
+
+  h2 {
+    font-weight: lighter;
+    font-size: 1.3em;
+  }
+
+  #about input {
+    display: none;
+  }
+
+  #birth:checked ~ .test {
+    display: block;
+  }
+
+  #mid:checked ~ .test {
+    display: block;
+  }
+
+  #end:checked ~ .test {
+    display: block;
+  }
+
+  #birth:checked ~ .dotter {
+    background-color: lightgray;
+  }
+
+  #mid:checked ~ .dotter {
+    background-color: lightgray;
+  }
+
+  #end:checked ~ .dotter {
+    background-color: lightgray;
+  }
+
+  #projects {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: 250px;
+    height: 250px;
+    background-color: transparent;
+    margin: 0 auto;
+    position: relative;
+    transform: rotate(45deg);
+  }
+
+  .projsec {
+    margin-top: 50px;
+  }
+
+  #projects li {
+    font-family: "mate sc";
+    color: white;
+    text-align: center;
+    font-size: 1.1em;
+    transform: rotate(-45deg);
+  }
+
+  #tri {
+    width: 90%;
+    height: 90%;
+    background-color: black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #design {
+    width: 100%;
+    height: 100%;
+    background-color: lightgray;
+    display: grid;
+    grid-template-rows: 75px 300px 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;    
+  }
+
+  #design p {
+    text-align: center;
+    padding: 30px;
+    font-family: "Arial";
+    grid-row: 1/2;
+    grid-column: 2/5;
+    place-items: center;
+  }
+  
+.navigation{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    cursor: pointer;
+    margin: 20px;
+    transform: rotate(45deg);
+  }
+  
+  .labelss{
+    grid-row: 3/5;
+    display: flex;
+    grid-column: 3/4;
+  }
+  
+    .frames {
+    width: 80%;
+    height: 80%;
+    background-color: transparent;
+    margin: 0 auto;
+    grid-row: 2/3;
+    grid-column: 1/6;
+    overflow:hidden;
+  }
+
+  #popup1 {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: relative;
+
+  }
+
+  #popup1 input {
+    display: none;
+  }
+
+  #popup1:target {
+    display: block;
+    position: fixed;
+    top: -500px;
+    animation: drop 0.5s ease forwards;   
+  }
+  
+  
+  @keyframes drop{
+    0%{opacity: 0}
+    100%{transform:translateY(500px); opacity:1;}
+  }
+
+  
+    #popup2 {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: relative;
+    
+  }
+
+  #popup2 input {
+    display: none;
+  }
+
+  #popup2:target {
+    display: block;
+    position: fixed;
+    top: -500px;
+    animation: drop 0.5s ease forwards;
+  }
+  
+    #popup3 {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: relative;
+  }
+
+  #popup3 input {
+    display: none;
+  }
+
+  #popup3:target {
+    display: block;
+    position: fixed;
+    top: -500px;
+    animation: drop 0.5s ease forwards;
+  }
+  
+    #popup4 {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: relative;
+  }
+
+  #popup4 input {
+    display: none;
+  }
+
+  #popup4:target {
+    display: block;
+    position: fixed;
+    top: -500px;
+    animation: drop 0.5s ease forwards;
+  }
+
+
+  .testing {
+    width: 1000px;
+    height: 1000px;
+    background-color: white;
+    display: none;
+  }
+
+#first:checked ~ .testing, #first1:checked~.testing, #first2:checked~.testing, #first3:checked~.testing {
+    display: block;
+    background-color: white;
+  }
+
+#second:checked ~ .testing, #second1:checked~.testing, #second2:checked~.testing, #second3:checked~.testing {
+    display: block;
+    background-color: lightgray;
+  }
+
+#third:checked ~ .testing, #third1:checked~.testing, #third2:checked~.testing, #third3:checked~.testing{
+    display: block;
+    background-color: gray;
+  }
+
+
+  #popup1:target {
+    display: block;
+    position: fixed;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: black;
+    font-size: 0.8em;
+    border: solid 2px;
+    border-radius: 50%;
+    padding: 5px;
+  }
+
+  .space {
+    width: 100px;
+    height: 100px;
+  }
+
+  #social-sites {
+    display: flex;
+    justify-content: center;
+    border-top: solid 1px;
+  }
+
+  #social-sites img {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+  }
+}
+  
+   #welcome-section:after {
+    
+    display: none;
+
+  }
+  
+  
+}
+
+
+@media only screen and (max-width: 420px) {
+  .body {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+    user-select: none;
+  }
+
+  #navbar {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .list {
+    display: flex;
+  }
+
+  .text {
+    background-color: black;
+    color: white;
+    display: grid;
+    width: 90px;
+    place-items: center;
+    margin: 10px 2px 0px 2px;
+    padding: 3px;
+    font-size: 1em;
+    font-family: "mate sc";
+    transform: skew(5deg, 0);
+  }
+
+  .label1 {
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  .label2 {
+    border-radius: 0px 0px 0px 0px;
+  }
+
+  .label3 {
+    border-radius: 0px 0px 0px 0px;
+  }
+
+  .label4 {
+    border-radius: 0px 10px 10px 0px;
+  }
+
+  .drop {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    background-color: black;
+    color: white;
+    margin: 10px 2px 0px 2px;
+    transform: skew(5deg, 0);
+    font-size: 10px;
+  }
+
+  .button {
+    width: 0px;
+    height: 0px;
+    border-top: 6px solid white;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    position: absolute;
+    top: 13px;
+    left: 9px;
+  }
+
+  .droplink {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    background-color: black;
+    color: white;
+    margin: 10px 2px 0px 2px;
+  }
+
+  .droplist {
+    position: absolute;
+    top: -100px;
+    right: 0;
+    color: black;
+    margin-right: 12px;
+    display: none;      
+  }
+
+    @keyframes dropdowns{
+    0%{opacity: 0}
+    50%{opacity:0}
+    100%{top: 30px; opacity:1;}
+  }
+  
+  
+  #dropdown:checked + .droplist {
+    display: flex;
+    animation: dropdowns 0.3s ease forwards; 
+  }
+
+  div ul li {
+    background-color: black;
+    margin: 5px 2px 2px 2px;
+    color: white;
+    font-size: 1em;
+    width: 100px;
+    height: 30px;
+    font-family: "mate sc";
+    display: grid;
+    place-items: center;
+  }
+
+  a {
+    cursor: pointer;
+  }
+
+  #welcome-section {
+    text-align: center;
+    font-size: 1.5em;
+    grid-row: 1/2;
+  }
+
+  .namaste {
+    font-family: lemonada;
+    padding-top: 70px;
+    font-size: 50px;
+    padding-bottom: 60px;
+  }
+
+  .hellomynameis {
+    display: flex;
+    justify-content: center;
+    grid-row: 2/3;
+  }
+
+  .box {
+    background-color: black;
+    height: 200px;
+    width: 350px;
+    border-radius: 10px;
+    margin-top: -20px;
+  }
+
+  .hello {
+    color: white;
+    text-align: center;
+    padding: 10px 0px 15px 0px;
+    font-family: "lemonada";
+  }
+
+  .name {
+    color: black;
+    background-color: white;
+    height: 50%;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    user-select: none;
+  }
+
+  .name:hover {
+    background-color: lightgray;
+    cursor: pointer;
+  }
+
+  .rishav {
+    margin: auto;
+    font-size: 2em;
+    font-family: "kaushan script";
+  }
+
+  #about {
+    grid-row: 3/4;
+    width: 90%;
+    height: 500px;
+    background-color: lightgray;
+    margin: 50px auto 100px auto;
+    display: grid;
+    grid-template-rows: 75px 1fr;
+    border-radius: 20px;
+    position: relative;
+  }
+
+  .timeline {
+    grid-row: 1/2;
+    display: grid;
+    place-items: center;
+  }
+
+  .line {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    display: flex;
+    place-items: center;
+  }
+
+  .dots {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+  }
+
+  .dotter {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+  }
+
+  .dotter:hover {
+    background-color: white;
+    width: 17px;
+    height: 17px;
+  }
+
+  label {
+    display: block;
+  }
+
+  #navbar input {
+    display: none;
+  }
+
+  .test {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    right: 20px;
+    text-align: center;
+    font-family: "Arial";
+  }
+
+  h2 {
+    font-weight: lighter;
+    font-size: 1.3em;
+  }
+
+  #about input {
+    display: none;
+  }
+
+  #birth:checked ~ .test {
+    display: block;
+  }
+
+  #mid:checked ~ .test {
+    display: block;
+  }
+
+  #end:checked ~ .test {
+    display: block;
+  }
+
+  #birth:checked ~ .dotter {
+    background-color: lightgray;
+  }
+
+  #mid:checked ~ .dotter {
+    background-color: lightgray;
+  }
+
+  #end:checked ~ .dotter {
+    background-color: lightgray;
+  }
+
+  #projects {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: 250px;
+    height: 250px;
+    background-color: transparent;
+    margin: 0 auto;
+    position: relative;
+    transform: rotate(45deg);
+  }
+
+  .projsec {
+    margin-top: 50px;
+  }
+
+  #projects li {
+    font-family: "mate sc";
+    color: white;
+    text-align: center;
+    font-size: 1.1em;
+    transform: rotate(-45deg);
+  }
+
+  #tri {
+    width: 90%;
+    height: 90%;
+    background-color: black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #design {
+    width: 100%;
+    height: 100%;
+    background-color: lightgray;
+    display: grid;
+    grid-template-rows: 75px 300px 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;    
+  }
+
+  #design p {
+    text-align: center;
+    padding: 30px;
+    font-family: "Arial";
+    grid-row: 1/2;
+    grid-column: 2/5;
+    place-items: center;
+  }
+  
+.navigation{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    cursor: pointer;
+    margin: 20px;
+    transform: rotate(45deg);
+  }
+  
+  .labelss{
+    grid-row: 3/5;
+    display: flex;
+    grid-column: 3/4;
+  }
+  
+    .frames {
+    width: 80%;
+    height: 80%;
+    background-color: transparent;
+    margin: 0 auto;
+    grid-row: 2/3;
+    grid-column: 1/6;
+    overflow:hidden;
+  }
+
+  #popup1 {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: relative;
+
+  }
+
+  #popup1 input {
+    display: none;
+  }
+
+  #popup1:target {
+    display: block;
+    position: fixed;
+    top: -500px;
+    animation: drop 0.5s ease forwards;   
+  }
+  
+  
+  @keyframes drop{
+    0%{opacity: 0}
+    100%{transform:translateY(500px); opacity:1;}
+  }
+
+  
+    #popup2 {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: relative;
+    
+  }
+
+  #popup2 input {
+    display: none;
+  }
+
+  #popup2:target {
+    display: block;
+    position: fixed;
+    top: -500px;
+    animation: drop 0.5s ease forwards;
+  }
+  
+    #popup3 {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: relative;
+  }
+
+  #popup3 input {
+    display: none;
+  }
+
+  #popup3:target {
+    display: block;
+    position: fixed;
+    top: -500px;
+    animation: drop 0.5s ease forwards;
+  }
+  
+    #popup4 {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: relative;
+  }
+
+  #popup4 input {
+    display: none;
+  }
+
+  #popup4:target {
+    display: block;
+    position: fixed;
+    top: -500px;
+    animation: drop 0.5s ease forwards;
+  }
+
+
+  .testing {
+    width: 1000px;
+    height: 1000px;
+    background-color: white;
+    display: none;
+  }
+
+#first:checked ~ .testing, #first1:checked~.testing, #first2:checked~.testing, #first3:checked~.testing {
+    display: block;
+    background-color: white;
+  }
+
+#second:checked ~ .testing, #second1:checked~.testing, #second2:checked~.testing, #second3:checked~.testing {
+    display: block;
+    background-color: lightgray;
+  }
+
+#third:checked ~ .testing, #third1:checked~.testing, #third2:checked~.testing, #third3:checked~.testing{
+    display: block;
+    background-color: gray;
+  }
+
+
+  #popup1:target {
+    display: block;
+    position: fixed;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: black;
+    font-size: 0.8em;
+    border: solid 2px;
+    border-radius: 50%;
+    padding: 5px;
+  }
+
+  .space {
+    width: 100px;
+    height: 100px;
+  }
+
+  #social-sites {
+    display: flex;
+    justify-content: center;
+    border-top: solid 1px;
+  }
+
+  #social-sites img {
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+  }
+}
+
